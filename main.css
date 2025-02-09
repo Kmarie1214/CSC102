@@ -1,0 +1,38 @@
+/* 
+ declartion block:
+
+ selector{
+    property: value;
+    property:  value;
+ }
+ */
+
+body{
+   background-color: aquamarine;
+    color: chocolate;
+}
+header{
+    text-align: center;
+}
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+     margin-right: 200px;
+}
+
+#memepage{
+       margin-right: 200px;
+       width: 400px;
+}
+
+ h1{
+      text-align: center;
+ }
+ 
