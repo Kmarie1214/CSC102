@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="firstName"><br>
+    <input type="text" id="lastName"><br>
+    <input type="submit" id="submit" value="Enter Name" onclick="validateStrings()">
+
+    <script>
+
+
+    function validateStrings()
+    {
+        let firstNameElement = document.getElementById("firstName");
+        let lastNameElement = document.getElementById("lastName");
+
+        console.log(firstNameElement.value);
+        console.log(lastNameElement.value);
+
+        let firstNameString = firstNameElement.value;
+        let lastNameString = lastNameElement.value;
+
+        let nameCombo = firstNameString + " " + lastNameString;
+
+        console.log(nameCombo);
+
+        if (nameCombo.length > 20)
+        {
+           alert(" Uh Oh! Too big! no more than 20");
+           return;
+        }
+
+        console.log("Input validated!");
+    }
+    </script>
+</body>
+</html>
